@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import profile from "../public/profile.jpg";
+import cv from "../public/resume.jpg";
 import { saveAs } from "file-saver";
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 import { RainbowHighlight } from "./RainbowHighlight";
@@ -10,7 +10,7 @@ const MoreInfo = () => {
   const colors = ["#F59E0B", "#84CC16", "#10B981", "#3B82F6"];
   const resume = () => {
     saveAs(
-      "https://drive.google.com/file/d/1p8Qo7sVBoxnLxzZ6V6F0PvFQHqhlOwhH/view?usp=sharing",
+      "https://drive.google.com/file/d/17xS10UWT-cNBBHZbeB1t_lW4m3gOyQLd/view?usp=sharing",
       "print.pdf"
     );
   };
@@ -26,7 +26,7 @@ const MoreInfo = () => {
               <div className="h-full w-full relative border-2 border-white rounded-2xl">
                 <button onClick={resume}>
                   <Image
-                    src={profile}
+                    src={cv}
                     alt="thumbnail"
                     layout="fill"
                     objectFit="cover"
